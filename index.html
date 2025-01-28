@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Minimalista</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> <!-- Link para o seu arquivo CSS -->
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
     <style>
         body { font-family: 'Inter', sans-serif; }
     </style>
@@ -16,9 +16,9 @@
         <h1 class="text-xl font-bold">Gonçalo Caldeira</h1>
         <nav>
             <ul class="flex space-x-6">
-                <li><a href="#about" class="hover:underline">Sobre</a></li>
-                <li><a href="#portfolio" class="hover:underline">Portfólio</a></li>
-                <li><a href="#contact" class="hover:underline">Contacto</a></li>
+                <li><a href="#sobre" class="hover:underline">Sobre</a></li>
+                <li><a href="#projetos" class="hover:underline">Portfólio</a></li>
+                <li><a href="#contato" class="hover:underline">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -30,15 +30,16 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="px-6 py-12 bg-gray-100">
+    <section id="projetos" class="px-6 py-12 bg-gray-100">
         <h2 class="text-3xl font-bold text-center mb-6">Portfólio</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Project 1 -->
-            <div class="group">
-                <div class="relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="https://via.placeholder.com/400x300" alt="Projecto 1" class="w-full">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition">
-                        <p class="text-white text-lg">Ver Projeto</p>
+            <div class="projeto">
+                <div class="imagem-container">
+                    <img src="https://via.placeholder.com/400x300" alt="Projeto 1">
+                    <div class="overlay">
+                        <h3>Projeto 1</h3>
+                        <p>Descrição breve do projeto.</p>
                     </div>
                 </div>
             </div>
@@ -47,7 +48,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="px-6 py-12">
+    <section id="sobre" class="px-6 py-12">
         <h2 class="text-3xl font-bold text-center mb-6">Sobre Mim</h2>
         <p class="max-w-2xl mx-auto text-center text-gray-600">
             Sou um editor de vídeo com paixão por criar histórias que cativam. Tenho 6 anos de experiência e domino ferramentas como Premiere Pro, DaVinci Resolve, e Lightroom.
@@ -55,7 +56,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="px-6 py-12 bg-gray-100">
+    <section id="contato" class="px-6 py-12 bg-gray-100">
         <h2 class="text-3xl font-bold text-center mb-6">Contacto</h2>
         <form class="max-w-lg mx-auto space-y-4">
             <input type="text" placeholder="Nome" class="w-full p-3 border border-gray-300 rounded">
@@ -71,13 +72,5 @@
     </footer>
 </body>
 </html>
-<div class="projeto">
-    <div class="imagem-container">
-        <img src="projeto1.jpg" alt="Projeto 1">
-        <div class="overlay">
-            <h3>Projeto 1</h3>
-            <p>Descrição breve do projeto.</p>
-        </div>
-    </div>
-</div>
+
 
