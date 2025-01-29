@@ -121,3 +121,8 @@ a:hover {
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
 }
+header img {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Garante que a imagem mantenha a proporção */
+}
+
